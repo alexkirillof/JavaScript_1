@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task_6</title>
+</head>
+<body>
+  <script>
+  "use strict";
+
+let a = +prompt("Введите cумму,которую Вы хотите внести на счет:"),
+    z = String(a).substr(String(a).length - 2),
+    end;
+    console.log(z);
+   
+    if(z>= 2 && z<= 4){
+        end="я"
+    } else if(z%10==1){
+       end="ь" 
+    } else{
+        end="ей"
+    }
+    
+    alert("Ваша сумма в "+ a+ " рубл"+end+ "  успешно зачислена.");
+
+</script>
+
+</body>
+</html>
