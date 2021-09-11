@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task_1</title>
+</head>
+<body>
+  <script>
+  "use strict";
+     let items = {
+        number: prompt('Введите число от 0 до 999'),
+        units: 0,
+        tens: 0,
+        hundreds: 0,
+    };
+    if (items.number <= 9 && items.number>=0) {
+        items.units = items.number;
+    } else if (items.number <= 999 && items.number>9) {
+        items.units = Math.floor(items.number % 10);
+        items.tens = Math.floor(items.number / 10 % 10);
+        items.hundreds = Math.floor(items.number / 100 % 10);
+    } else {
+                alert("Вы ввели число за диапазоном 0 - 999");
+                   }
+    console.log(items);
+
+</script>
+
+</body>
+</html>

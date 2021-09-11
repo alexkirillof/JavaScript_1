@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task_1.1</title>
+</head>
+<body>
+  <script>
+  "use strict";
+  // ES-5 
+//  function  Product(name,price) {
+//             this.name = name;
+//             this.price = price;
+//         }
+
+//         Product.prototype.make25PercentDiscount = function(discount) {
+//             this.price=this.price*((100-discount)/100);
+//         };
+
+//         let car1 = new Product('Volvo',5000);
+//         car1.make25PercentDiscount(25);
+//         console.log(car1);
+
+ // ES-6 
+
+        class Product {
+            constructor(name,price) {
+                 this.name = name;
+                 this.price = price;
+            }
+
+            make25PercentDiscount(discount) {
+                this.price=this.price*((100-discount)/100);
+            }
+        }
+
+       let car1 = new Product('Nissan',3000);
+           car1.make25PercentDiscount(25);
+           console.log(car1);
+
+</script>
+
+</body>
+</html>
