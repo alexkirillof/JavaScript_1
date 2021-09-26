@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="3.96875mm"
+   height="2.6458333mm"
+   viewBox="0 0 3.96875 2.6458333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="filter_after_menu.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="10.482005"
+     inkscape:cx="8.7769469"
+     inkscape:cy="10.828081"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-69.328675,-29.769899)">
+    <g
+       style="fill:#ef5b70;fill-opacity:1"
+       id="g859"
+       transform="matrix(0.26458333,0,0,0.26458333,69.328675,29.769899)">
+      <path
+         d="M 0.833333,10 H 4.16667 C 4.625,10 5,9.625 5,9.16667 5,8.70833 4.625,8.33333 4.16667,8.33333 H 0.833333 C 0.375,8.33333 0,8.70833 0,9.16667 0,9.625 0.375,10 0.833333,10 Z M 0,0.833333 C 0,1.29167 0.375,1.66667 0.833333,1.66667 H 14.1667 C 14.625,1.66667 15,1.29167 15,0.833333 15,0.375 14.625,0 14.1667,0 H 0.833333 C 0.375,0 0,0.375 0,0.833333 Z M 0.833333,5.83333 H 9.16667 C 9.625,5.83333 10,5.45833 10,5 10,4.54167 9.625,4.16667 9.16667,4.16667 H 0.833333 C 0.375,4.16667 0,4.54167 0,5 0,5.45833 0.375,5.83333 0.833333,5.83333 Z"
+         fill="#000000"
+         id="path850"
+         style="fill:#ef5b70;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

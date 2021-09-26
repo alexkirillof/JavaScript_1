@@ -1,0 +1,299 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container{
+    margin: 0 auto;
+      padding: 0;      
+    }
+.logo{
+    margin-left: 8px;
+}
+   
+.right-links{
+    margin-right: 17px;
+}
+
+.first-section{
+    height: 368px;
+}
+
+.first-section img{
+    height:368px;
+    margin-left: 100px;
+}
+
+.FS-Lable {
+    margin-top: 138px;
+    margin-right: 10px;
+}
+
+.Lable-header h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+}
+
+.Lable-header h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.second-content{
+    margin: 0 auto !important
+}
+.top-img-item {
+    height: 167px;
+    padding: 59px 39px;
+    margin-top: 20px;
+}
+.bottom-img-item {
+    height: 116px;
+    padding: 33px;
+   }
+
+.top-img {
+       margin-bottom: 20px;
+   }
+.ts-Card-img {
+    width: 100%;
+}
+   .third-header {
+       margin-top: 154px;
+       margin-bottom: 74px;
+   }
+.Card-description {
+    max-width: 100%;
+}
+.item-link{
+    width:100%
+}
+.item-box{
+    width:48.5%
+}
+.Browse
+{margin-bottom: 65px;
+    margin-top: 32px;
+}
+.fourth-section{
+    min-height: 610px;
+    padding-top:48px;
+}
+.fs{
+    flex-direction: column;
+}
+.fs-content p{
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+.top-footer-block{
+     background-size: cover;
+     height: 614px; background-repeat: no-repeat;
+    background-position-x: 25%;
+     
+}
+.footer-top-content{
+   flex-direction: column;
+}
+.left-block {
+   margin: 0 auto;
+    margin-top: 54px;
+    margin-bottom: 48px;
+}
+.right-block {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (min-width: 375px) and (max-width: 767px){
+     .container {
+         width: 100%;
+         margin: 0 auto;
+         padding:0 16px;
+     }
+
+     .right-menu-items
+     {
+         display: none !important;
+     }
+
+.menu .top-menu-links
+ {display: flex !important}
+
+ .fs-img{
+     display: none;
+ }
+ .first-section{
+     margin: 0 auto;
+     text-align: center;
+     height: 363px;
+ }
+.FS-Lable {
+    margin: 0 auto;
+    margin-top: 150px;
+    
+}
+
+.Fl-line {
+   height: 61px 
+}
+.Lable-header h1 {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.Lable-header h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.second-section{
+    padding-top:64px
+}
+.top-img {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.top-img-item{
+    margin-top: 32px;
+    width:100%;
+    background-size: cover
+}
+
+.tii-fourth {
+   height: 111px;
+    background-size:cover;
+    background-position: center;
+    padding-top:30px;
+}
+.item-box{
+    margin: 0 auto;
+    text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.item{
+    min-width: 360px;
+    margin-bottom: 16px;
+}
+.Card-description {
+    max-width: 100%;
+}
+.Browse {
+    margin-bottom: 96px;
+    margin-top: 41px;
+}
+
+.fourth-section {
+    min-height: 610px;
+    padding-top: 48px;
+}
+
+.fs {
+    flex-direction: column;
+}
+
+.top-footer-block {
+    background-size: cover;
+    height: 614px;
+    background-repeat: no-repeat;
+    background-position-x: 25%;
+
+}
+
+.footer-top-content {
+    flex-direction: column;
+}
+
+.left-block {
+    margin: 0 auto;
+    margin-top: 54px;
+    margin-bottom: 48px;
+}
+
+.right-block {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lb-text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+}
+.right-block h3:nth-child(2) {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer-bottom {
+min-height: 143px;
+display: block;
+position: relative;
+padding: 0;
+
+}
+
+.social ul {
+    padding-left: 0;
+}
+
+.social{
+    padding-left:0;
+    padding-left:0;
+    position: absolute;
+    top: 43px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom:40px; 
+
+}  
+.social-item:first-child {
+margin-left: 0;
+}
+.Rights {
+      position: absolute;
+      bottom:-9px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 251px;
+}
+}

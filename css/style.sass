@@ -1,0 +1,1105 @@
+$dark: #222222
+$pink: #F16D7F
+$white: #FFFFFF
+$gray: #6F6E6E
+
+@mixin fonts($a, $b, $c)
+  font-weight: $a
+  font-size: $b
+  line-height: $c
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Lato', sans-serif
+
+.container
+  width: 1140px
+  margin: 0 auto
+  padding: 0
+
+.text
+  font-size: 14px
+  line-height: 17px
+
+.header
+  margin: 0 auto
+  padding: 18px 0
+  position: relative
+  background-color: $dark
+
+.Searh-icon
+  margin-left: 41px
+
+.form
+  padding-top: 8px
+
+.Login-icon, .Cart-icon
+  margin-left: 33px
+
+.Cart
+  position: relative
+  cursor: pointer
+
+  &-items
+    position: absolute
+    right: -19%
+    top: -19%
+    background: $pink
+    font-size: 12px
+    color: $white
+    border-radius: 50%
+    width: 19px
+    height: 19px
+    text-align: center
+    line-height: 19px
+.basket 
+    position: absolute;
+    z-index: 3;
+    right: 140px;
+    top: 74px;
+    background: $white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 600px
+    .basketRow 
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ebebeb;
+      padding-bottom: 10px;
+      text-align: center;
+      .plus, .minus
+        width: 25px
+        border: 0;
+        border-radius: 12.5px;
+        background-color: #d6d6d6
+        font-weight: bold;
+        text-align: center;
+       
+
+
+    .basketTotal 
+      font-weight: bold;
+      text-align: right;
+    .basketHeader 
+      font-weight: bold;
+
+
+
+
+.Humburger-link
+  list-style-type: none
+  cursor: pointer
+
+.menu
+  height: 764px
+  position: absolute
+  background: $white
+  top: 76px
+  right: 0px
+  padding: 35px 0 35px 35px
+  float: right
+  z-index: 12
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+  .top-menu-links
+    display: none !important
+    margin-bottom: 16px
+    .li-tml
+      margin-left: 0
+
+.close
+  position: absolute
+  @include fonts(700,15px,15px)
+  opacity: 0.6
+  cursor: pointer
+  top: 19px
+  right: 19px
+
+  &:hover
+    opacity: 1
+    color: $pink
+
+.menu-heading
+  @include fonts(700,14px,17px)
+
+.menu-names
+  @include fonts(400,14px,17px)
+  color: $pink
+  margin-top: 20px
+
+.menu-Items
+  list-style: none
+  margin-left: 20px
+  min-width: 105px
+
+.menu-item
+  text-decoration: none
+  color: $gray
+  margin-top: 12px
+  transition: color 1s ease-out
+
+  &:hover
+    color: $pink
+
+.block-menu
+  margin-right: 70px
+
+.first-section
+  background-color: #F1E4E6
+  height: 764px
+
+.FS-Lable
+  margin-top: 290px
+  margin-right: 88px
+
+.Lable-header h1
+  @include fonts(900,48px,58px)
+
+.Lable-header h2
+  @include fonts(700,32px,38px)
+
+.Fl-line
+  background-color: $pink
+  width: 12px
+  height: 92px
+  margin-right: 12px
+
+.anover
+  color: $pink
+
+.second-content
+  padding-top: 65px
+
+.top-img
+  margin-bottom: 30px
+
+  &-item
+    background-blend-mode: multiply
+    text-align: center
+    width: 31.5%
+    height: 260px
+    padding: 103px
+    text-decoration: none
+    -moz-transition: all 1s ease-out
+    -o-transition: all 1s ease-out
+    -webkit-transition: all 1s ease-out
+
+  &-item:hover
+    -webkit-transform: scale(1.02)
+    -moz-transform: scale(1.02)
+    -o-transform: scale(1.02)
+
+.bottom-img-item
+  background-blend-mode: multiply
+  text-align: center
+  width: 100%
+  height: 180px
+  padding: 65px
+  display: block
+  text-decoration: none
+  -moz-transition: all 1s ease-out
+  -o-transition: all 1s ease-out
+  -webkit-transition: all 1s ease-out
+
+  &:hover
+    -webkit-transform: scale(1.02)
+    -moz-transform: scale(1.02)
+    -o-transform: scale(1.02)
+
+.tii-first
+  background: url(../img/Picture_1.jpg) rgba(0, 0, 0, 0.6)
+  background-size: 100% 100%
+  background-position: center
+  background-size: contain
+
+.tii-second
+  background: url(../img/Picture_2.jpg) rgba(0, 0, 0, 0.6)
+  background-size: contain
+  background-position: center
+
+.tii-third
+  background: url(../img/Picture_3.jpg) rgba(0, 0, 0, 0.6)
+  background-size: contain
+  background-position: center
+
+.tii-fourth
+  background: url(../img/Picture_4.jpg) rgba(0, 0, 0, 0.6)
+  background-size: 100% 100%
+  background-position: center
+
+.top-lable
+  @include fonts(400,16px,19px)
+  text-align: center
+  color: $white
+
+.bottom-lable
+  @include fonts(700,24px,28px)
+  text-align: center
+  color: $pink
+
+.third-header
+  margin-top: 96px
+  text-align: center
+  margin-bottom: 48px
+
+.th-top
+  @include fonts(400,30px,36px)
+  color: $dark
+
+.th-text
+  @extend .text
+  color: #9F9F9F
+
+.third-section-cards
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  position: relative
+
+.tsc-mb
+  margin-bottom: 128px
+
+.item-box
+  margin-bottom: 30px
+
+  .item
+    width: 100%
+    position: relative
+    -moz-transition: all 1s ease-out
+    -o-transition: all 1s ease-out
+    -webkit-transition: all 1s ease-out
+
+.item:hover
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+  -webkit-transform: scale(1.02)
+  -moz-transform: scale(1.02)
+  -o-transform: scale(1.02)
+
+.ts-Card-img
+  width: 100%
+
+.item-link
+  display: block
+  text-decoration: none
+
+.item:hover .ts-Card-img
+  filter: brightness(30%)
+
+.item:hover .add-cart
+  display: flex
+
+.add-cart
+  position: absolute
+  top: 188px
+  display: none
+  justify-content: center
+  width: 100%
+
+  &-link:hover
+    box-shadow: 0 0 5px $white
+
+  &-link
+    display: flex
+    border: 1px solid $white
+    align-items: center
+    min-height: 43px
+    padding: 8px 13px
+    text-decoration: none
+
+.cart-text
+  @extend .text
+  color: $white
+  margin-left: 11px
+
+.Card-description
+  margin: -3px 0
+  border: 0
+  max-width: 360px
+  background: #F8F8F8
+  padding: 24px 20px 20px 16px
+
+.ts-Card-header
+  @include fonts(400,13px,16px)
+  color: $dark
+  margin-bottom: 12px
+
+.Card-description-text
+  font-weight: 300
+  @extend .text
+  color: #5D5D5D
+  margin-bottom: 18px
+
+.card-price
+  font-size: 16px
+  line-height: 19px
+  color: $pink
+
+.Browse
+  margin: 0 auto
+  margin-bottom: 96px
+  margin-top: 48px
+  padding: 14px 38px
+  border: 1px solid $pink
+  text-align: center
+  color: $pink
+  width: 220px
+
+  &-text
+    @include fonts(400,16px,19px)
+    color: $pink
+    text-decoration: none
+    transition: all 1s
+
+  &:hover
+    background-color: $pink
+
+  &:hover .Browse-text
+    color: white
+
+.fourth-section
+  height: 341px
+  background: $dark
+  padding-top: 103px
+
+.fs-content
+  text-align: center
+
+  &:nth-child(1) img
+    margin-bottom: 28px
+
+  &:nth-child(2) img
+    margin-bottom: 19px
+
+  &:nth-child(3) img
+    margin-bottom: 25px
+
+  & h4
+    font-weight: 400
+    font-size: 19.96px
+    line-height: 24px
+    color: #FBFBFB
+    margin-bottom: 16px
+
+  & p
+    font-weight: 300
+    @extend .text
+    text-align: center
+    color: #FBFBFB
+    max-width: 360px
+
+.top-footer-block
+  background: url(../img/Five-image.jpg)
+  background-size: 100% 100%
+  background-position: center
+  height: 448px
+  background-repeat: no-repeat
+
+.overlay
+  width: 100%
+  height: 100%
+  background: rgba(244, 244, 244, 0.7)
+
+.left-block
+  text-align: center
+  margin-top: 97px
+
+.face
+  margin-bottom: 30px
+
+.lb-text
+  max-width: 360px
+  @include fonts(400,20px,24px)
+  text-align: center
+  color: $dark
+
+.right-block
+  text-align: center
+  margin-top: 150px
+  margin-right: 97px
+
+  & h3:nth-child(1)
+    font-weight: 700
+    font-size: 24px
+    line-height: 40px
+    text-align: center
+    color: $dark
+  & h3:nth-child(2)
+    font-weight: 400
+    font-size: 18px
+    line-height: 30px
+    text-align: center
+    color: $dark
+    margin-bottom: 32px
+
+.Email-form
+  width: 360px
+  height: 50px
+
+.email
+  background-color: #E1E1E1
+  font-size: 14px
+  line-height: 17px
+  color: $dark
+  opacity: 0.67
+  padding: 16.5px 64px 16.5px 22px
+  border-width: 0
+  border-radius: 25px 0 0 25px
+  outline: none
+
+.Subscribe
+  background-color: $pink
+  font-size: 14px
+  line-height: 17px
+  color: $white
+  padding: 16.5px
+  border-width: 0
+  border-radius: 0 25px 25px 0
+  margin-left: -4px
+  cursor: pointer
+
+.footer-bottom
+  background: $dark
+  height: 80px
+  padding: 30px 0
+
+.Rights
+  font-weight: 400
+  font-size: 16px
+  line-height: 19px
+  color: #FBFBFB
+
+.social ul
+  list-style: none
+.fab
+  color: $dark
+.social-item
+  margin-left: 7px
+  background-color: $white
+  width: 32px
+  height: 32px
+  justify-content: center
+  align-items: center
+  transition: all 1s ease-out
+.social-item:hover
+  background-color: $pink
+
+.social-item:hover .fab
+  color: $white
+
+.social-link
+  text-decoration: none
+
+.catalog-first-section
+  background: #F8F3F4
+  height: 148px
+
+.new-arrivals
+  margin-top: 60px
+
+.nav
+  margin-top: 65px
+
+  &-item
+    text-decoration: none
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: $gray
+    transition: color 1s ease-out
+
+  &-item:hover
+    color: $pink
+
+  &-input:checked ~ .nav-item
+    font-weight: 700
+    color: $pink
+
+.ml
+  margin-left: 16px
+
+.Pagination
+  text-align: center
+  font-weight: 400
+  font-size: 14px
+  line-height: 17px
+  margin-bottom: 96px
+
+.cursor-item
+  font-weight: 700
+  color: $pink
+
+.catalog-header
+  padding: 51px 0 65px 16px
+  position: relative
+  height: 133px
+
+.filter
+  list-style-type: none
+  cursor: pointer
+  position: relative
+
+  &-name
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: $dark
+
+  &-name::after
+    margin-left: 10px
+    content: url('../img/filter_after.svg')
+    background-size: 28px 28px
+    height: 10px
+    width: 15px
+    cursor: pointer
+
+  &-menu
+    position: absolute
+    z-index: 4
+    padding: 16px 16px 0 16px
+    top: 27px
+    left: 0
+    background: $white
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+  &-menu-name
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: $pink
+    cursor: pointer
+    margin-bottom: 24px
+
+  &-menu-name::after
+    margin-left: 10px
+    content: url('../img/filter_after_menu.svg')
+    background-size: 28px 28px
+    height: 10px
+    width: 15px
+    cursor: pointer
+
+  &-menu-heading
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    color: $gray
+    cursor: pointer
+    align-items: center
+    margin: 0 0 0 15px
+    position: relative
+
+.select-color
+  color: $pink
+
+.filter-menu-heading::before
+  margin-right: 11px
+  content: url('../img/menu_befor.svg')
+  background-size: 28px 28px
+  height: 37px
+  width: 5px
+  cursor: pointer
+  position: absolute
+  top: -10px
+  left: -15px
+
+.menu-hr
+  width: 327px
+  margin: 10px 0 18px 0
+
+.menu-filter-Items
+  list-style: none
+  padding-left: 15px
+  margin-bottom: 18px
+  .menu-item
+    @include fonts(400,14px,17px)
+    color: $gray
+    text-decoration: none
+    width: 100%
+    display: block
+    transition: color 1s ease-out
+  .menu-item:hover
+    color: $pink
+
+.filter-menu-heading
+  display: block
+  position: relative
+  cursor: pointer
+  color: $gray
+  transition: color 1s ease-out
+
+  &:hover
+    color: $pink
+
+.accardion-input
+  width: 0
+  height: 0
+  -webkit-appearance: none
+  appearance: none
+  position: absolute
+
+  &:checked~.filter-menu-heading
+    color: $pink
+
+  &:checked~.acc-title:after
+    border-style: solid
+    border-width: 0 5px 8px 5px
+    border-color: transparent transparent $white transparent
+
+  &:checked~.acc-text
+    display: block
+
+.acc-text
+  display: none
+
+/* Pagination */
+
+.Pagination
+  border: 1px solid #EBEBEB
+  width: 296px
+  height: 46px
+  margin: 0 auto
+  margin-bottom: 96px
+
+[data-pagination]
+  font-size: 8pt
+  line-height: 1
+  font-weight: 400
+  margin: 1em auto
+  text-align: center
+  transition: font-size .2s ease-in-out
+
+[data-pagination] ul
+  list-style-type: none
+  display: inline
+  font-size: 100%
+  margin: 0
+  padding: .5em
+
+[data-pagination] ul li
+  display: inline-block
+  font-size: 100%
+  width: auto
+  border-radius: 3px
+
+[data-pagination]>a
+  font-size: 140%
+
+[data-pagination] a
+  color: #777
+  font-size: 100%
+  padding: .5em
+  text-decoration: none
+  font-weight: 300
+  font-size: 16px
+  line-height: 19px
+  width: 290px
+
+[data-pagination] a:focus,
+[data-pagination] a:hover
+  color: $pink
+
+[data-pagination] li.current
+  background: rgba(0, 0, 0, .1)
+
+.arrow
+  font-weight: bold
+  width: 8px
+  height: 14px
+
+.slider-section
+  height: 1320px
+  position: relative
+  margin-bottom: 130px
+
+.slider
+  background: url(../img/Slide_1.jpg)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+  height: 777px
+  background-color: #F7F7F7
+  position: absolute
+  width: 100%
+
+  &-arrow
+    position: absolute
+    top: 365px
+    padding: 12px 10px 12px 10px
+    background: rgba(42, 42, 42, 0.15)
+    height: 46px
+    width: 46px
+    border: 0
+    text-align: center
+    transition: all 1s ease-out
+
+  &-arrow span
+    font-weight: 700
+    font-size: 24px
+    line-height: 19px
+
+.left
+  left: 0
+
+.right
+  right: 0
+
+.slider-arrow:hover span
+  color: $pink
+
+.slider-info
+  position: absolute
+  top: 712px
+  height: 600px
+  width: 1140px
+  background: $white
+  border: 1px solid #EAEAEA
+  padding-top: 64px
+  text-align: center
+  left: 50%
+  margin-left: -570px
+
+  & h3
+    font-size: 14px
+    line-height: 17px
+    color: $pink
+    font-weight: 300
+    margin-bottom: 12px
+
+.gorizont-line
+  display: block
+  width: 63px
+  height: 3px
+  background-color: $pink
+  margin: 0 auto
+  margin-bottom: 12px
+
+.slider-info h2
+  font-weight: 300
+  font-size: 18px
+  line-height: 22px
+  color: #4D4D4D
+  margin-bottom: 48px
+
+.slider-info-txt
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+  color: #5E5E5E
+  max-width: 555px
+  margin: 0 auto
+  margin-bottom: 32px
+
+.slider-info span
+  font-weight: 300
+  font-size: 24px
+  line-height: 29px
+  color: $pink
+
+.slider-info hr
+  width: 640px
+  margin: 0 auto
+  margin-top: 65px
+
+.slider-filter-nav
+  width: 400px
+  margin: 0 auto
+  margin-bottom: 48px
+  margin-top: 65px
+  box-sizing: border-box
+  position: relative
+
+  & details
+    height: 18px
+
+.add-cart-sl
+  margin: 0 auto
+  width: 211px
+  height: 47px
+  text-align: center
+  border: 1px solid $pink
+  padding: 10px 20px
+  transition: all 1s
+  position: relative
+
+  & a
+    text-decoration: none
+    font-size: 16px
+    line-height: 19px
+
+  & a span
+    font-size: 16px
+    line-height: 19px
+
+  & a img
+    margin-right: 12px
+
+.filter-nav
+  min-width: 360px
+  margin-left: 300px
+  margin-top: -15px
+
+.select
+  padding: 0
+  border: none
+  background-color: transparent
+  outline: none
+  color: $gray
+
+.sl-cart-text::before
+  left: 20px
+  content: url(../img/red-cart-link.svg)
+  background-size: 25px 25px
+  height: 25px
+  width: 25px
+  cursor: pointer
+  position: absolute
+
+.add-cart-sl:hover
+  background-color: $pink
+
+.add-cart-sl:hover .cart-text
+  color: white
+
+.add-cart-sl:hover .sl-cart-text::before
+  content: url(../img/cart-link.svg)
+
+.carts
+  min-height: 998px
+  padding-top: 56px
+  padding-bottom: 128px
+  box-sizing: border-box
+  .left-cart-block
+    max-width: 57%
+    .cart
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+      height: 306px
+      margin-top: 40px
+      padding: 0
+      border: none
+      cursor: pointer
+      -moz-transition: all 1s
+      -o-transition: all 1s
+      -webkit-transition: all 1s
+      .cart-image
+        height: 100%
+        width: 262px
+      .cart-info
+        position: relative
+        padding: 22px 22px 0 31px
+        height: 100%
+        min-width: 390px
+        .cart-info-heading
+          @include fonts(400,24px,29px)
+          width: 60%
+          margin-bottom: 42px
+        .cart-info-items
+          @include fonts(400,22px,26px)
+          color: #575757
+        .cii-price
+          color: $pink
+        .quantity
+          width: 200px
+          .qua-lable
+            @include fonts(400,22px,26px)
+            color: #575757
+          .qty
+            margin-left: 24px
+            border: 1px solid #EAEAEA
+            width: 43px
+            text-align: center
+            @include fonts(400,18px,22px)
+            color: $gray
+            outline: none
+
+    .cart:hover
+      -webkit-transform: scale(1.02)
+      -moz-transform: scale(1.02)
+      -o-transform: scale(1.02)
+    .clb-bottons
+      margin-top: 72px
+    .clb-botton
+      @include fonts(300,14px,17px)
+      border: 1px solid #A4A4A4
+      text-decoration: none
+      color: $dark
+      padding: 16px 40px
+      background-color: $white
+      transition: all 1s ease-out
+    .clb-botton:hover
+      border: 1px solid $pink
+      color: $pink
+  .right-cart-block
+    max-width: 32%
+    margin-top: 57px
+    .rcb-form
+      width: 100%
+
+      .form-heading
+        float: left
+        @include fonts(300,16px,19px)
+
+      .country
+        margin-top: 20px
+        @include fonts(300,13px,16px)
+        padding: 14px 16px
+        border: 1px solid #A4A4A4
+        width: 100%
+        outline: none
+      .state::placeholder
+        color: $dark
+      .get-button
+        padding: 10px 14px
+        width: 100px
+        color: $gray
+        background-color: $white
+        @include fonts(300,11px,13px)
+        transition: all 1s ease-out
+      .get-button:hover
+        border: 1px solid $pink
+        color: $pink
+    .total
+      margin-top: 57px
+      width: 100%
+      min-height: 214px
+      background-color: #F5F3F3
+      padding: 40px 34px
+      box-sizing: border-box
+      text-align: center
+      h4
+        float: right
+        margin-bottom: 18px
+        @include fonts(400,11px,13px)
+        color: #4A4A4A
+        span
+          margin-left: 25px
+      h3
+        float: right
+        clear: both
+        @include fonts(300,16px,19px)
+        color: $dark
+        margin-bottom: 21px
+        span
+          margin-left: 25px
+          color: $pink
+          font-weight: 700
+      hr
+        margin: 0 auto
+        background: #ccc9c9
+        clear: both
+        margin-bottom: 17px
+      .total-btn
+        color: $white
+        background-color: $pink
+        padding: 15px 42px
+        @include fonts(300,16px,19px)
+        border: none
+        transition: color 0.7s
+        transition: background-color 0.7s
+      .total-btn:hover
+        color: $pink
+        background-color: $white
+
+.registration
+  min-height: 675px
+  padding-top: 64px
+  padding-bottom: 96px
+  box-sizing: border-box
+  .form-block
+    max-width: 32%
+    .form-heading
+      float: left
+      @include fonts(300,16px,19px)
+    .input-place
+      margin-top: 20px
+      @include fonts(300,13px,16px)
+      padding: 14px 16px
+      border: 1px solid #A4A4A4
+      width: 100%
+      outline: none
+    #male-form
+      margin-top: 30px
+      height: 22px
+      width: 22px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      outline: none
+      position: relative
+    #male-form::before
+      content: ''
+      position: absolute
+      top: 72%
+      left: 30%
+      width: 17px
+      height: 17px
+      border-radius: 50%
+      transform: translate(-50%, -50%)
+      background-color: white
+      border: 1px solid $gray
+    #male-form::before:hover
+      border: 1px solid $pink
+    #male-form:checked::after
+      content: ''
+      position: absolute
+      top: 72%
+      left: 30%
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: $pink
+      transform: translate(-50%, -50%)
+      visibility: visible
+
+    .mf-lable
+      cursor: pointer
+      @include fonts(300,11px,13px)
+      color: $dark
+      margin-right: 20px
+    .pass-desc
+      margin-top: 15px
+      width: 100%
+      min-height: 32px
+      @include fonts(300,13px,16px)
+      color: $gray
+      margin-bottom: 40px
+    .send-form
+      color: $white
+      background-color: $pink
+      padding: 15px 42px
+      @include fonts(300,16px,19px)
+      border: 1px solid transparent
+      transition: all 1s ease-out
+
+    .send-form:hover
+      color: $pink
+      border: 1px solid $pink
+      background-color: $white
+
+.right-form-block
+  width: 57%
+  .rfb-heading
+    margin: bottom 22px
+    @include fonts(300,24px,29px)
+  p
+    @include fonts(300,24px,29px)
+    margin: bottom 22px
+
+  ul
+    list-style-type: none
+    padding-left: 0
+  li
+    @include fonts(300,24px,29px)
+    margin-bottom: 16px
+  li:before
+    content: "\2713"
+    margin-right: 22px
+
+.hide
+  display: none
+
+.show
+  display: block
