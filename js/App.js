@@ -98,11 +98,6 @@ function changeProductCountBtns(productId) {
           let ItemPrice = cardPrice[productId-1].innerText;
           let totalPriceForRow = ((productCountEl.textContent) * (ItemPrice.match(/[0-9/.]+/)[0])).toFixed(2);
           productTotalRowEl.textContent = totalPriceForRow;
-          let totalSum = 0;
-  for (let productId in cart) {
-      totalSum += cart[productId] * (cardPrice[productId-1].innerText.match(/[0-9/.]+/)[0]);
-  }
-  basketTotalValueEl.textContent = totalSum.toFixed(2);
          }; 
         
   plusBtn.onclick=plusItem;
