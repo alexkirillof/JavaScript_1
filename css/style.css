@@ -55,20 +55,26 @@
   line-height: 19px;
 }
 
-.basket {
+.right-menu-items {
+  position: relative;
+}
+
+.right-menu-items .basket {
   position: absolute;
   z-index: 3;
-  right: 140px;
-  top: 74px;
-  background: #FFFFFF;
+  right: 0;
+  top: 51px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  background: #e7e6e6;
   padding: 10px;
-  border: 1px solid #ebebeb;
-  border-radius: 3px;
+  border: 0;
+  border-radius: 8px;
   font-size: 14px;
   width: 600px;
 }
 
-.basket .basketRow {
+.right-menu-items .basket .basketRow {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -80,21 +86,22 @@
   text-align: center;
 }
 
-.basket .basketRow .plus, .basket .basketRow .minus {
+.right-menu-items .basket .basketRow .plus, .right-menu-items .basket .basketRow .minus {
   width: 25px;
-  border: 0;
+  border: 1px solid #F16D7F;
   border-radius: 12.5px;
   background-color: #d6d6d6;
+  color: #F16D7F;
   font-weight: bold;
   text-align: center;
 }
 
-.basket .basketTotal {
+.right-menu-items .basket .basketTotal {
   font-weight: bold;
-  text-align: right;
+  text-align: center;
 }
 
-.basket .basketHeader {
+.right-menu-items .basket .basketHeader {
   font-weight: bold;
 }
 

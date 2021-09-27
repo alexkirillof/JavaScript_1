@@ -54,38 +54,45 @@ $gray: #6F6E6E
     height: 19px
     text-align: center
     line-height: 19px
-.basket 
+
+.right-menu-items
+  position: relative
+  .basket 
     position: absolute;
     z-index: 3;
-    right: 140px;
-    top: 74px;
-    background: $white;
+    right: 0;
+    top: 51px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    background: #e7e6e6
     padding: 10px;
-    border: 1px solid #ebebeb;
-    border-radius: 3px;
+    border: 0;
+    border-radius: 8px;
     font-size: 14px;
     width: 600px
+
     .basketRow 
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 10px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #ebebeb;
-      padding-bottom: 10px;
-      text-align: center;
-      .plus, .minus
-        width: 25px
-        border: 0;
-        border-radius: 12.5px;
-        background-color: #d6d6d6
-        font-weight: bold;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 10px;
         text-align: center;
+        
+        .plus, .minus
+         width: 25px
+         border: 1px solid $pink;
+         border-radius: 12.5px;
+         background-color: #d6d6d6
+         color: $pink
+         font-weight: bold;
+         text-align: center;
        
 
 
     .basketTotal 
       font-weight: bold;
-      text-align: right;
+      text-align: center;
     .basketHeader 
       font-weight: bold;
 
