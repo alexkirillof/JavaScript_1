@@ -93,40 +93,46 @@ function changeProductCountBtns(productId) {
          busketRow = document.querySelector(`.basketRow[data-productId="${productId}"]`),
          productTotalRowEl = document.querySelector(`.productTotalRow[data-productId="${productId}"]`);
      
-         function Items(){
+         function Items(productId){
           const productTotalRowEl = document.querySelector(`.productTotalRow[data-productId="${productId}"]`);
           let ItemPrice = cardPrice[productId-1].innerText;
           let totalPriceForRow = ((productCountEl.textContent) * (ItemPrice.match(/[0-9/.]+/)[0])).toFixed(2);
           productTotalRowEl.textContent = totalPriceForRow;
+          let totalSum = 0;
+  for (let productId in cart) {
+      totalSum += cart[productId] * (cardPrice[productId-1].innerText.match(/[0-9/.]+/)[0]);
+  }
+  basketTotalValueEl.textContent = totalSum.toFixed(2);
          }; 
         
   plusBtn.onclick=plusItem;
   minusBtn.onclick=minusItem;
   function plusItem() {
     productCountEl.textContent++;
-    Items();
-    basketTotalValueEl.textContent=productTotalRowEl.textContent;
-    console.log(cart);
-    
+    Items(productId);
+   
     
   }
   function minusItem() {
     productCountEl.textContent--;
-    Items();
-    calculateTotalBasketSum();
+    Items(productId);
     if(productCountEl.textContent==0){
       busketRow.remove();
     }
   }
 }
 
-function calculateAndRenderTotalBasketSum() {
+function calculateAndRenderTotalBasketSum(productId) {
+    
   let totalSum = 0;
   for (let productId in cart) {
       totalSum += cart[productId] * (cardPrice[productId-1].innerText.match(/[0-9/.]+/)[0]);
   }
   basketTotalValueEl.textContent = totalSum.toFixed(2);
+ 
+  
 }
+
 
     
     function cartCountPlus(){
